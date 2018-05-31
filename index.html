@@ -1,5 +1,4 @@
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,33 +20,52 @@
             text-align: center;
         }
 
-
-
         .form {
+            float: left;
             width: 100%;
-            border: 1px #888 solid;
-
-        }
-        
-        div.label{
-            background: #fc0;
-            text-align: left;
+            position: relative;
+            left: 10%;
         }
 
-        div.input{
-            width:50%;
+        div.name {
+            margin-right: 10px;
+            float: left;
+            text-align: right;
+            width: 100px;
+            line-height: 50px;
+        }
+
+        div.input {
+            float: left;
+            width: 300px;
         }
 
         label {
-            background: #fc0;
-            
             color: #333;
         }
 
         input[type="text"],
         input[type="password"] {
-            
+            width: 320px;
+            height: 50px;
             border: 1px #eee solid;
+            font-size: 18px;
+            line-height: 50px;
+            padding: 10px;
+            color: #333;
+        }
+
+        .btn {
+            cursor: pointer;
+            width: 320px;
+            height: 50px;
+            border: 1px #eee solid;
+            background: rgb(26, 87, 255);
+            color: #fff;
+            font-size: 25px;
+            text-align: center;
+            position: relative;
+            left: 5%;
         }
     </style>
 </head>
@@ -59,24 +77,36 @@
         <form action="">
 
             <div class="form">
+                <div class="name">
                     <label for="email">
                         電子郵件
                     </label>
+                </div>
+                <div class="input">
                     <input type="text" name="email" />
+                </div>
             </div>
 
             <div class="form">
-                <label for="password">
-                    密碼
-                </label>
-                <input type="password" name="password" />
+                <div class="name">
+                    <label for="password">
+                        密碼
+                    </label>
+                </div>
+                <div class="input">
+                    <input type="password" name="password" />
+                </div>
             </div>
 
             <div class="form">
-                <label for="name">
-                    姓名
-                </label>
-                <input type="text" name="name" />
+                <div class="name">
+                    <label for="name">
+                        姓名
+                    </label>
+                </div>
+                <div class="input">
+                    <input type="text" name="name" />
+                </div>
             </div>
 
             <input type="submit" name="register" class="btn" />
