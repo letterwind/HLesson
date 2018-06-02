@@ -1,47 +1,48 @@
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>衝阿~~蒜頭人</title>
+    <title>GG網頁排版教學</title>
     <style>
         body {
-            background: #ddd;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            background:linear-gradient(135deg, #c2f5f8, #011d19);
+            background:-moz-linear-gradient(-45deg,#fff,#017c6c);
+            overflow: hidden;
         }
 
         .wrap {
-            border: 1px #eee solid;
             width: 600px;
             height: 300px;
             position: absolute;
             top: 50%;
             left: 50%;
             margin: -150px 0 0 -300px;
+        }
+
+        .title {
             text-align: center;
+            color: #ffffff;
         }
 
         .form {
-            float: left;
-            width: 100%;
             position: relative;
-            left: 10%;
-        }
-
-        div.name {
-            margin-right: 10px;
-            float: left;
-            text-align: right;
-            width: 100px;
-            line-height: 50px;
         }
 
         div.input {
-            float: left;
-            width: 300px;
+            display: inline;
+
         }
 
         label {
-            color: #333;
+            display: inline-block;
+            text-align: right;
+            font-size: 16px;
+            width: 150px;
+            color: #1e1f20;
         }
 
         input[type="text"],
@@ -53,9 +54,11 @@
             line-height: 50px;
             padding: 10px;
             color: #333;
+            display: inline-block;
         }
 
         .btn {
+            margin: 0 auto;
             cursor: pointer;
             width: 320px;
             height: 50px;
@@ -64,8 +67,8 @@
             color: #fff;
             font-size: 25px;
             text-align: center;
+            left:153px;
             position: relative;
-            left: 5%;
         }
     </style>
 </head>
@@ -73,43 +76,37 @@
 <body>
 
     <div class="wrap">
-        <h2 class="title">衝阿~~蒜頭人</h2>
+        <h2 class="title">GG網頁排版教學</h2>
         <form action="">
 
             <div class="form">
-                <div class="name">
-                    <label for="email">
-                        電子郵件
-                    </label>
-                </div>
+                <label for="email">
+                    電子郵件
+                </label>
                 <div class="input">
                     <input type="text" name="email" />
                 </div>
             </div>
 
             <div class="form">
-                <div class="name">
-                    <label for="password">
-                        密碼
-                    </label>
-                </div>
+                <label for="password">
+                    密碼
+                </label>
                 <div class="input">
                     <input type="password" name="password" />
                 </div>
             </div>
 
             <div class="form">
-                <div class="name">
-                    <label for="name">
-                        姓名
-                    </label>
-                </div>
+                <label for="name">
+                    姓名
+                </label>
                 <div class="input">
                     <input type="text" name="name" />
                 </div>
             </div>
 
-            <input type="submit" name="register" class="btn" />
+            <input type="submit" name="register" class="btn" value="註冊" />
         </form>
     </div>
 </body>

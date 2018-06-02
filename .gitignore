@@ -6,3 +6,5 @@
 # 忽略 package-lock.json
 
 package-lock.json
+
+/.vscode/
