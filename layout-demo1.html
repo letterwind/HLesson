@@ -1,0 +1,108 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout Demo1</title>
+    <style>
+        body {
+            position: relative;
+        }
+
+        div {
+            border: 1px solid #eee;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+
+        .container {
+            position: relative;
+            margin: 0 auto;
+            max-width: 1200px;
+            min-width: 800px;
+        }
+
+        .header {
+            position: relative;
+            height: 100px;
+        }
+
+        .logo {
+            border: 1px #3f04df solid;
+            position: absolute;
+            width: 200px;
+            /* height:100px; */
+        }
+
+        .menu {
+            position: relative;
+            margin-left: 200px;
+            border: 1px solid #089c5e;
+        }
+
+        section {
+            position: relative;
+        }
+
+        .left-content {
+            position: absolute;
+            width: 300px;
+            border: 5px #d4c70b solid;
+        }
+
+        .right-content {
+            position: relative;
+            margin-left: 300px;
+            border: 5px #d40b69 solid;
+        }
+
+        footer {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            border: 2px solid #c40808;
+            width: 100%;
+            height: 100px;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <div class="header">
+                <div class="logo">
+                    <img src="assets/images/logo.jpg" alt="">
+                </div>
+                <div class="menu">選單</div>
+            </div>
+        </header>
+        <section class="content">
+            <h2>Position</h2>
+            <div class="left-content">
+                左邊的內容
+                <br/>左邊的內容
+                <br/>左邊的內容
+                <br/>左邊的內容
+            </div>
+            <div class="right-content">
+                右邊的內容
+                <br/> 右邊的內容
+                <br/> 右邊的內容
+                <br/> 右邊的內容
+                <br/>
+            </div>
+        </section>
+
+    </div>
+    <footer>
+        下面的內容
+    </footer>
+</body>
+
+</html>
