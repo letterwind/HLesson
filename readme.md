@@ -15,7 +15,7 @@
 #### layout-demo1.html
 #### layout-demo2.html
 
-##主要目標
+##  主要目標
 
 *  學會基本Html 及 CSS 樣式設定
 *  如何做置中排版
