@@ -1,5 +1,3 @@
-# GGLesson 切版教學
-
 ## 安裝步驟
 
 1.  安裝nodejs
